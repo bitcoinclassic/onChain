@@ -154,6 +154,9 @@ a.url {
 
 .header--top {
   @include style-header;
+  background-image: url('../bursting_earth.png');
+  background-size:cover;
+  background-position:bottom middle;
   height: 20 * $baseline;
 
   @include media(max-width 1024px) {
@@ -172,10 +175,21 @@ a.url {
   }
 }
 
+.header__fade {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: $baseline*8;
+  z-index: 0;
+  @include linear-gradient($orange 30%, transparent 100%, $fallback: transparent);
+}
 
 
 .header__above-fold {
   margin-top: $baseline*5;
+  z-index: 1;
+  position: relative;
+
   @include outer-container;
 
   @include media(max-width 1280px) {
@@ -239,7 +253,7 @@ a.url {
   }
 
   a {
-    color: darken($grapefruit, 35%);
+    color: darken($grapefruit, 55%);
     text-decoration: none;
     display: block;
     position: relative;

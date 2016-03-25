@@ -123,6 +123,9 @@ a.url {
   width: 100%;
   position: relative;
   padding-top: 1.6rem;
+  background-image: url("../bursting_earth.png");
+  background-size: cover;
+  background-position: bottom middle;
   height: 32rem; }
   .header--top::after {
     clear: both;
@@ -142,8 +145,20 @@ a.url {
         font-size: 1.778rem;
         line-height: 3.2rem; } }
 
+.header__fade {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 12.8rem;
+  z-index: 0;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(#ffcc33 30%, transparent 100%);
+  background-image: linear-gradient(#ffcc33 30%, transparent 100%); }
+
 .header__above-fold {
   margin-top: 8rem;
+  z-index: 1;
+  position: relative;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
@@ -230,7 +245,7 @@ a.url {
     position: relative;
     z-index: 2; }
   .navigation__item a {
-    color: #935700;
+    color: #2d1b00;
     text-decoration: none;
     display: block;
     position: relative;
