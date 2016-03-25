@@ -19,7 +19,7 @@ $grapefruit: #ffb347;
 // Baseline is sexy
 
 $base-font-size: 1rem;
-$base-line-height: $base-font-size * 1.5;
+$base-line-height: $base-font-size * 1.6;
 $baseline: $base-line-height;
 
 $type-settings: (
@@ -117,9 +117,8 @@ br {
 }
 
 hr {
-	height: $baseline;
+	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-  background-position: center;
   border: 0;
   max-width: 1200px;
   margin: $baseline auto;
@@ -155,7 +154,7 @@ a.url {
 
 .header--top {
   @include style-header;
-  height: 25 * $baseline;
+  height: 20 * $baseline;
 
   @include media(max-width 1024px) {
     height: 14 * $baseline;
@@ -176,14 +175,18 @@ a.url {
 
 
 .header__above-fold {
-  margin-top: $baseline*6;
+  margin-top: $baseline*5;
   @include outer-container;
 
   @include media(max-width 1280px) {
-    margin-top: 0;
+
     @include span-columns(10);
     @include shift(1);
     @include omega;
+  }
+
+  @include media(max-width 1024px) {
+    margin-top: 0;
   }
 }
 
