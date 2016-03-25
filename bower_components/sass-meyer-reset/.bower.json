@@ -1,0 +1,14 @@
+{
+  "name": "sass-meyer-reset",
+  "homepage": "https://github.com/ryanburnette/sass-meyer-reset",
+  "_release": "1dc79b9776",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1dc79b977685b4240f8971987293938fbb4e602c"
+  },
+  "_source": "git://github.com/ryanburnette/sass-meyer-reset.git",
+  "_target": "*",
+  "_originalSource": "sass-meyer-reset",
+  "_direct": true
+}
