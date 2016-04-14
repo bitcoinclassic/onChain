@@ -19,7 +19,7 @@ $grapefruit: #ffb347;
 // Baseline is sexy
 
 $base-font-size: 1rem;
-$base-line-height: $base-font-size * 1.7;
+$base-line-height: $base-font-size * 1.6;
 $baseline: $base-line-height;
 
 $type-settings: (
@@ -463,4 +463,30 @@ button, .button {
     height: 100px;
     border-radius: 100px;
   }
+}
+
+input[type=email] {
+  height: $baseline * 2;
+  line-height: $baseline * 2;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  width: 400px;
+  text-align: center;
+  padding: 0 $baseline;
+}
+
+input[type=button] {
+  display: inline-block;
+}
+
+.mc-field-group {
+  display: inline-block;
+}
+
+div.clear {
+  display: inline-block;
 }

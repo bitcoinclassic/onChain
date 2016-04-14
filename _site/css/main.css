@@ -52,53 +52,53 @@ body {
   background: ghostwhite;
   color: #11111d;
   font-size: 1rem;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
   font-family: Montserrat; }
 
 h1, h2, h3 {
   font-weight: 700; }
 
 h1 {
-  margin-top: 1.7rem;
+  margin-top: 1.6rem;
   font-size: 2.369rem;
-  line-height: 3.4rem; }
+  line-height: 3.2rem; }
 
 h2 {
   font-size: 1.778rem;
-  line-height: 3.4rem; }
+  line-height: 3.2rem; }
   @media screen and (max-width: 1024px) {
     h2 {
       font-size: 1.333rem;
-      line-height: 1.7rem; } }
+      line-height: 1.6rem; } }
 
 h3 {
-  margin-top: 1.7rem;
+  margin-top: 1.6rem;
   font-size: 1.333rem;
-  line-height: 1.7rem; }
+  line-height: 1.6rem; }
 
 br {
-  line-height: 1.7rem;
-  height: 1.7rem; }
+  line-height: 1.6rem;
+  height: 1.6rem; }
 
 hr {
   height: 6px;
   background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
   border: 0;
   max-width: 1200px;
-  margin: 1.7rem auto; }
+  margin: 1.6rem auto; }
 
 p + h1, p + h2, p + h3 {
-  margin-top: 1.7rem; }
+  margin-top: 1.6rem; }
 
 article {
-  margin-bottom: 1.7rem; }
+  margin-bottom: 1.6rem; }
   article::after {
     clear: both;
     content: "";
     display: table; }
 
 p + p {
-  margin-top: 1.7rem; }
+  margin-top: 1.6rem; }
 
 a, a:visited, a:active {
   color: #11111d;
@@ -114,8 +114,8 @@ a:hover {
   background-image: linear-gradient(45deg,#ffcc33, #ffb347);
   width: 100%;
   position: relative;
-  padding-top: 1.7rem;
-  height: 6.8rem;
+  padding-top: 1.6rem;
+  height: 6.4rem;
   color: #11111d; }
   .header--default::after {
     clear: both;
@@ -124,7 +124,7 @@ a:hover {
 
 a.url {
   font-size: 0.75rem;
-  line-height: 1.7rem; }
+  line-height: 1.6rem; }
 
 .header--top {
   background-color: #ffcc33;
@@ -132,41 +132,41 @@ a.url {
   background-image: linear-gradient(45deg,#ffcc33, #ffb347);
   width: 100%;
   position: relative;
-  padding-top: 1.7rem;
+  padding-top: 1.6rem;
   background-image: url("../bursting_earth.png");
   background-size: cover;
   background-position: bottom middle;
-  height: 34rem; }
+  height: 32rem; }
   .header--top::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 1024px) {
     .header--top {
-      height: 23.8rem; } }
+      height: 22.4rem; } }
   @media screen and (max-width: 800px) {
     .header--top {
-      height: 17rem; } }
+      height: 16rem; } }
   .header--top h1 {
     font-size: 3.157rem;
-    line-height: 5.1rem; }
+    line-height: 4.8rem; }
     @media screen and (max-width: 800px) {
       .header--top h1 {
         font-size: 1.778rem;
-        line-height: 3.4rem; } }
+        line-height: 3.2rem; } }
 
 .header__fade {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 13.6rem;
+  height: 12.8rem;
   z-index: 0;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#ffcc33 30%, transparent 100%);
   background-image: linear-gradient(#ffcc33 30%, transparent 100%); }
 
 .header__above-fold {
-  margin-top: 8.5rem;
+  margin-top: 8rem;
   z-index: 1;
   position: relative;
   max-width: 1200px;
@@ -197,7 +197,7 @@ a.url {
   width: 100%;
   text-align: right;
   font-family: Montserrat;
-  height: 5.1rem; }
+  height: 4.8rem; }
   .navigation::after {
     clear: both;
     content: "";
@@ -205,7 +205,7 @@ a.url {
   .navigation ul {
     list-style: none;
     display: inline-block;
-    height: 5.1rem; }
+    height: 4.8rem; }
     @media screen and (max-width: 1280px) {
       .navigation ul {
         float: left;
@@ -250,8 +250,8 @@ a.url {
         margin-right: 0; } }
   .navigation__item i {
     display: block;
-    line-height: 1.7rem;
-    height: 1.7rem;
+    line-height: 1.6rem;
+    height: 1.6rem;
     position: relative;
     z-index: 2; }
   .navigation__item a {
@@ -264,17 +264,17 @@ a.url {
     .navigation__item a:hover {
       color: #11111d; }
   .navigation__item span {
-    line-height: 1.7rem;
+    line-height: 1.6rem;
     position: relative;
     z-index: 2; }
     @media screen and (max-width: 800px) {
       .navigation__item span {
         font-size: 0.75rem;
-        line-height: 1.7rem; } }
+        line-height: 1.6rem; } }
     @media screen and (max-width: 600px) {
       .navigation__item span {
         font-size: 0.563rem;
-        line-height: 1.7rem; } }
+        line-height: 1.6rem; } }
 
 .navigation__item.active a {
   color: #11111d; }
@@ -305,8 +305,8 @@ a.url {
   border-radius: $baseline*2;
   background: transparentize(lighten($orange, 20%), 0.7);
   position: absolute;
-  right: calc(50% - (3.4rem/2));
-  top: calc(50% - (3.4rem/2));
+  right: calc(50% - (3.2rem/2));
+  top: calc(50% - (3.2rem/2));
   display: block;
   z-index: 1;
   content: '';
@@ -314,11 +314,11 @@ a.url {
 */
 .two {
   background: #dedcde;
-  padding: 1.7rem;
+  padding: 1.6rem;
   text-align: center; }
 
 main {
-  margin-bottom: 3.4rem; }
+  margin-bottom: 3.2rem; }
   main::after {
     clear: both;
     content: "";
@@ -333,8 +333,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   background: #dedcde;
-  padding-bottom: 5.1rem;
-  padding-top: 1.7rem; }
+  padding-bottom: 4.8rem;
+  padding-top: 1.6rem; }
   .footer::after {
     clear: both;
     content: "";
@@ -389,12 +389,12 @@ footer {
   color: ghostwhite; }
 
 button, .button {
-  height: 3.4rem;
-  line-height: 3.4rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
   text-align: center;
   background: #ffcc33;
   color: #11111d;
-  padding: 0 1.7rem;
+  padding: 0 1.6rem;
   border: 0;
   border-radius: 3px;
   font-size: 1em;
@@ -469,7 +469,7 @@ button, .button {
           background-image: -webkit-linear-gradient(transparent 0%, ghostwhite 80%);
           background-image: linear-gradient(transparent 0%, ghostwhite 80%); } }
   .twitter li {
-    margin-bottom: 1.7rem; }
+    margin-bottom: 1.6rem; }
 
 .author {
   display: block; }
@@ -483,3 +483,25 @@ button, .button {
       width: 100px;
       height: 100px;
       border-radius: 100px; } }
+
+input[type=email] {
+  height: 3.2rem;
+  line-height: 3.2rem;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  width: 400px;
+  text-align: center;
+  padding: 0 1.6rem; }
+
+input[type=button] {
+  display: inline-block; }
+
+.mc-field-group {
+  display: inline-block; }
+
+div.clear {
+  display: inline-block; }
