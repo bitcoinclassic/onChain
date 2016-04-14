@@ -19,7 +19,7 @@ $grapefruit: #ffb347;
 // Baseline is sexy
 
 $base-font-size: 1rem;
-$base-line-height: $base-font-size * 1.6;
+$base-line-height: $base-font-size * 1.7;
 $baseline: $base-line-height;
 
 $type-settings: (
@@ -102,8 +102,12 @@ h1 {
 }
 
 h2 {
-  margin-top: $baseline;
-  @include type-setting(2)
+  //margin-top: $baseline;
+  @include type-setting(2);
+
+  @include media(max-width 1024px) {
+    @include type-setting(1);
+  }
 }
 
 h3 {
@@ -126,6 +130,11 @@ hr {
 
 p + h1, p + h2, p + h3 {
   margin-top: $baseline;
+}
+
+article {
+  margin-bottom: $baseline;
+  @include clearfix();
 }
 
 p + p {
@@ -437,5 +446,21 @@ button, .button {
 
   li {
     margin-bottom: $baseline;
+  }
+}
+
+.author {
+  display: block;
+}
+
+.speaker img {
+  border-radius: 160px;
+  float: left;
+  margin-right: 24px;
+
+  @include media(max-width 1024px) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
   }
 }

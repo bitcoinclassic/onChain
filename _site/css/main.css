@@ -52,43 +52,53 @@ body {
   background: ghostwhite;
   color: #11111d;
   font-size: 1rem;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
   font-family: Montserrat; }
 
 h1, h2, h3 {
   font-weight: 700; }
 
 h1 {
-  margin-top: 1.6rem;
+  margin-top: 1.7rem;
   font-size: 2.369rem;
-  line-height: 3.2rem; }
+  line-height: 3.4rem; }
 
 h2 {
-  margin-top: 1.6rem;
   font-size: 1.778rem;
-  line-height: 3.2rem; }
+  line-height: 3.4rem; }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 1.333rem;
+      line-height: 1.7rem; } }
 
 h3 {
-  margin-top: 1.6rem;
+  margin-top: 1.7rem;
   font-size: 1.333rem;
-  line-height: 1.6rem; }
+  line-height: 1.7rem; }
 
 br {
-  line-height: 1.6rem;
-  height: 1.6rem; }
+  line-height: 1.7rem;
+  height: 1.7rem; }
 
 hr {
   height: 6px;
   background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
   border: 0;
   max-width: 1200px;
-  margin: 1.6rem auto; }
+  margin: 1.7rem auto; }
 
 p + h1, p + h2, p + h3 {
-  margin-top: 1.6rem; }
+  margin-top: 1.7rem; }
+
+article {
+  margin-bottom: 1.7rem; }
+  article::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 p + p {
-  margin-top: 1.6rem; }
+  margin-top: 1.7rem; }
 
 a, a:visited, a:active {
   color: #11111d;
@@ -104,8 +114,8 @@ a:hover {
   background-image: linear-gradient(45deg,#ffcc33, #ffb347);
   width: 100%;
   position: relative;
-  padding-top: 1.6rem;
-  height: 6.4rem;
+  padding-top: 1.7rem;
+  height: 6.8rem;
   color: #11111d; }
   .header--default::after {
     clear: both;
@@ -114,7 +124,7 @@ a:hover {
 
 a.url {
   font-size: 0.75rem;
-  line-height: 1.6rem; }
+  line-height: 1.7rem; }
 
 .header--top {
   background-color: #ffcc33;
@@ -122,41 +132,41 @@ a.url {
   background-image: linear-gradient(45deg,#ffcc33, #ffb347);
   width: 100%;
   position: relative;
-  padding-top: 1.6rem;
+  padding-top: 1.7rem;
   background-image: url("../bursting_earth.png");
   background-size: cover;
   background-position: bottom middle;
-  height: 32rem; }
+  height: 34rem; }
   .header--top::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 1024px) {
     .header--top {
-      height: 22.4rem; } }
+      height: 23.8rem; } }
   @media screen and (max-width: 800px) {
     .header--top {
-      height: 16rem; } }
+      height: 17rem; } }
   .header--top h1 {
     font-size: 3.157rem;
-    line-height: 4.8rem; }
+    line-height: 5.1rem; }
     @media screen and (max-width: 800px) {
       .header--top h1 {
         font-size: 1.778rem;
-        line-height: 3.2rem; } }
+        line-height: 3.4rem; } }
 
 .header__fade {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 12.8rem;
+  height: 13.6rem;
   z-index: 0;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#ffcc33 30%, transparent 100%);
   background-image: linear-gradient(#ffcc33 30%, transparent 100%); }
 
 .header__above-fold {
-  margin-top: 8rem;
+  margin-top: 8.5rem;
   z-index: 1;
   position: relative;
   max-width: 1200px;
@@ -187,7 +197,7 @@ a.url {
   width: 100%;
   text-align: right;
   font-family: Montserrat;
-  height: 4.8rem; }
+  height: 5.1rem; }
   .navigation::after {
     clear: both;
     content: "";
@@ -195,7 +205,7 @@ a.url {
   .navigation ul {
     list-style: none;
     display: inline-block;
-    height: 4.8rem; }
+    height: 5.1rem; }
     @media screen and (max-width: 1280px) {
       .navigation ul {
         float: left;
@@ -240,12 +250,12 @@ a.url {
         margin-right: 0; } }
   .navigation__item i {
     display: block;
-    line-height: 1.6rem;
-    height: 1.6rem;
+    line-height: 1.7rem;
+    height: 1.7rem;
     position: relative;
     z-index: 2; }
   .navigation__item a {
-    color: #2d1b00;
+    color: #2e1b00;
     text-decoration: none;
     display: block;
     position: relative;
@@ -254,17 +264,17 @@ a.url {
     .navigation__item a:hover {
       color: #11111d; }
   .navigation__item span {
-    line-height: 1.6rem;
+    line-height: 1.7rem;
     position: relative;
     z-index: 2; }
     @media screen and (max-width: 800px) {
       .navigation__item span {
         font-size: 0.75rem;
-        line-height: 1.6rem; } }
+        line-height: 1.7rem; } }
     @media screen and (max-width: 600px) {
       .navigation__item span {
         font-size: 0.563rem;
-        line-height: 1.6rem; } }
+        line-height: 1.7rem; } }
 
 .navigation__item.active a {
   color: #11111d; }
@@ -295,8 +305,8 @@ a.url {
   border-radius: $baseline*2;
   background: transparentize(lighten($orange, 20%), 0.7);
   position: absolute;
-  right: calc(50% - (3.2rem/2));
-  top: calc(50% - (3.2rem/2));
+  right: calc(50% - (3.4rem/2));
+  top: calc(50% - (3.4rem/2));
   display: block;
   z-index: 1;
   content: '';
@@ -304,11 +314,11 @@ a.url {
 */
 .two {
   background: #dedcde;
-  padding: 1.6rem;
+  padding: 1.7rem;
   text-align: center; }
 
 main {
-  margin-bottom: 3.2rem; }
+  margin-bottom: 3.4rem; }
   main::after {
     clear: both;
     content: "";
@@ -323,8 +333,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   background: #dedcde;
-  padding-bottom: 4.8rem;
-  padding-top: 1.6rem; }
+  padding-bottom: 5.1rem;
+  padding-top: 1.7rem; }
   .footer::after {
     clear: both;
     content: "";
@@ -379,12 +389,12 @@ footer {
   color: ghostwhite; }
 
 button, .button {
-  height: 3.2rem;
-  line-height: 3.2rem;
+  height: 3.4rem;
+  line-height: 3.4rem;
   text-align: center;
   background: #ffcc33;
   color: #11111d;
-  padding: 0 1.6rem;
+  padding: 0 1.7rem;
   border: 0;
   border-radius: 3px;
   font-size: 1em;
@@ -459,4 +469,17 @@ button, .button {
           background-image: -webkit-linear-gradient(transparent 0%, ghostwhite 80%);
           background-image: linear-gradient(transparent 0%, ghostwhite 80%); } }
   .twitter li {
-    margin-bottom: 1.6rem; }
+    margin-bottom: 1.7rem; }
+
+.author {
+  display: block; }
+
+.speaker img {
+  border-radius: 160px;
+  float: left;
+  margin-right: 24px; }
+  @media screen and (max-width: 1024px) {
+    .speaker img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px; } }

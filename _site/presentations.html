@@ -54,8 +54,100 @@
     <main>
         <section class="one">
   <h1>Presentations</h1>
-  <p>Some things are being written in here.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quae fugit distinctio harum, voluptatibus libero temporibus illum aliquid iste fugiat quaerat doloribus dolore eveniet asperiores. Officiis laborum perferendis praesentium dolorum libero.</p>
+  <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore odio culpa quisquam eos minima reiciendis hic sapiente natus veniam, ea. Qui, id voluptatibus asperiores quibusdam dolor. Eveniet, dolore, perferendis! Natus.</span><span>Fuga error in vel recusandae blanditiis quos cumque laudantium! Nisi cumque aspernatur explicabo eligendi porro facere tempore facilis magnam hic praesentium veniam perspiciatis delectus voluptatum omnis, eveniet vitae neque ipsum!</span></p>
+  <hr>
+  <article class="paper">
+    <h2>Block space as a commodity</h2>
+    <span class="author">Peter Rizun</span>
+    <p>
+      This talk will explore the question of whether block size is a useful tool for enforcing policy or an emergent phenomenon of the network. From the policy-tool perspective, the block size represents a “lever” that policy makers might use to balance the cost of operating a node with the market price for block space (i.e., transaction fees). Assuming only that block space obeys the laws of supply and demand, we will show that for any given market condition, there exists an artificial block size limit that will produce greater network security and slower blockchain growth than the equivalent no-limit case, at the expense of higher transaction fees and reduced economic activity. Despite the flexibility offered by the policy-tool approach, we will show that little empirical evidence exists that the network is capable of enforcing a strict block size limit, questioning whether the policy-tool perspective is valid. We conclude by suggesting a simple change to the Bitcoin software to empower each node operator to more easily express his free choice regarding the size of blocks he is willing to accept while simultaneously ensuring that his node tracks consensus.
+    </p>
+
+  </article>
+
+  <article class="paper">
+    <h2>The Micro-Global Economy</h2>
+    <span class="author">Dr. Charles Evans</span>
+    <p>
+      My presentation focuses on Bitcoin use cases in small-scale, cross-border trade. I am Executive Director of Conscious Entrepreneurship Foundation, which promotes the use of Bitcoin among the world's unbanked and underbanked. Currently, we work primarily with entrepreneurs in Sub-Saharan Africa, mostly in West Africa: Ghana, Nigeria, and Sierra Leone. For the 5.5 billion potential Bitcoin users, its use as a P2P medium of exchange is of greatest value.
+    </p>
+  </article>
+
+  <article class="paper">
+    <h2>Braiding the Blockchain</h2>
+    <span class="author">Bob McElrath</span>
+  </article>
+
+  <article class="paper">
+    <h2>Bitcoin is too big for training wheels</h2>
+    <span class="author">Gavin Andresen</span>
+    <p>
+      Satoshi imposed the one megabyte block size limit to prevent denial-of-service attacks at a time when it cost about two dollars to produce a block and anybody with a reasonably fast CPU could successfully solo mine a block.
+    </p>
+    <p>
+      Those days are past, and are not coming back. Bitcoin mining has become a specialized, highly competitive business, with millions of dollars of investment sunk in to employees, facilities, power contracts and ASIC hardware development and production.
+    </p>
+    <p>
+      That is all good; that investment is what secures the Bitcoin blockchain, and makes it the strongest money the world has ever known. It is time to take off the training wheels Satoshi imposed six years ago, and let Bitcoin do what it was designed to do-- grow. I will make the case for eliminating the block size limit as a consensus rule; with some simple software engineering and protocol design, there is no reason to artificially limit the block size.
+    </p>
+  </article>
+
+  <article class="paper">
+    <h2>Hard Forks and Schism forks why can't we have both?</h2>
+    <span class="author">Meni Rosenfield</span>
+    <p>
+      A lot of commotion and FUD has been drawn up about the scary nature of hard forks and how it could potentially result in Bitcoin splitting into 2 separate, non-fungible currencies.  But what if that could be made safe?  Would it then be such a bad thing?
+    </p>
+  </article>
+
+  <article class="paper">
+    <h2>BlockTorrent</h2>
+    <span class="author">Jon Toomim</span>
+    <p>
+      BlockTorrent is a way to speed up the IBD (Initial Block Download) of the blockchain by using BitTorrent like technology.  This reduces the download time and better spreads out network bandwidth loads.
+    </p>
+  </article>
+
+  <article class="paper">
+    <h2>Pushing the envelope - How Scaling Leads to Scaling</h2>
+    <span class="author">Jeff Garzik</span>
+    <p>
+      A risk posture based on current technical capabilities will overly constrain any system's growth. Bitcoin and the world at large are complex dynamic systems that respond to feedback. A useful system growing will be met with virtuous, self-reinforcing cycles of improvement as capacity challenges appear.
+    </p>
+  </article>
+
+  <article class="paper">
+    <h2>Expedited Forwarding in Bitcoin Unlimited</h2>
+    <span class="author">Andrew Stone</span>
+    <p>
+      To optimise the propagation of transactions and blocks, it makes sense to minimize the per-hop latency -- that is, minimize the time it takes to move data from one node to another.  Currently, the bitcoin network uses a three message sequential conversation to send a block or transaction.  This talk will report on efforts and discuss strategies to reduce this to a single message, and will also provide a general Bitcoin Unlimited status update.
+    </p>
+  </article>
+
+  <article class="paper">
+    <h2>xThin Blocks</h2>
+    <span class="author">Chronos Crypto</span>
+    <p>In order to scale the Bitcoin network, a faster less bandwidth intensive method is needed in order to send larger blocks. The thinblock strategy is designed to speed up the relay of blocks by using the transactions that already exist in the requester's memory pool as a way to rebuild the block, rather than download it in its entirety. </p>
+    <p>Differing from other thinblock strategies, “Xtreme Thinblocks” uses simple bloom filtering and a new class of transactions to ensure that almost all block requests only require a single round trip, which is essential for good performance on a system where transaction rates are steadily climbing and only a single threaded network layer exists. In addition, Xtreme Thinblocks uses a 64 bit transaction hash which further reduces thinblock size; in doing so a typical 1MB block can be reduced to a 10KB to 25KB thinblock.</p>
+  </article>
+
+  <article class="paper">
+    <h2>Libbitcoin</h2>
+    <span class="author">Eric Voskuill</span>
+    <p>
+      Libbitcoin is a set of cross platform, open source C++ libraries for building Bitcoin applications. The toolkit consists of libraries, examples, tests and applications. The project was established on three principles:
+    </p>
+    <p>
+      Privacy: Bitcoin should always remain as private as possible for its users. Privacy is essential to fungibility. Libbitcoin has developed important privacy technologies. Libbitcoin is the reference implementation for stealth addressing, transactions, and private discovery. The query API implements CurveCP for network privacy and client/server identity. Current work includes private information retrieval (PIR) of blockchain information.
+    </p>
+    <p>
+      Scalability: Bitcoin built today with the future in mind. Centralized services are not scaling solutions. Decentralized applications must be able to scale (add hardware to meet demand). The Bitcoin blockchain is a cache, so distributing it widely is optimal. Libbitcoin server exposes a high performance blockchain query interface. The server builds directly on the asynchronous full node which maintains the blockchain cache.
+    </p>
+    <p>
+      Integrity: No individual or group should have enough power over the network to compromise its original aims. Custodial accounts and web APIs reduce participation in the economic consensus, weakening integrity. We aim to reverse this trend by facilitating construction of decentralized applications. Airbitz, OpenBazaar and Darkwallet are some notable examples.
+    </p>
+
+  </article>
 
 </section>
 
@@ -71,7 +163,7 @@
       <h2>Share</h2>
       Similique incidunt, adipisci, iusto ipsam reiciendis dolores assumenda hic quo quisquam soluta nobis dolore quidem ex reprehenderit exercitationem quis eum, culpa sequi.
       <br><br>
-      <i class="fa fa-2x fa-slack"></i> <i class="fa fa-2x fa-twitter"></i> <i class="fa fa-2x fa-facebook"></i> <i class="fa fa-2x fa-github"></i>
+      <i class="fa fa-2x fa-slack"></i> <i class="fa fa-2x fa-twitter"></i> <i class="fa fa-2x fa-facebook"></i>
     </div>
   </section>
 </footer>
