@@ -313,9 +313,18 @@ a.url {
 }
 */
 .two {
-  background: #dedcde;
+  background: #11111d;
   padding: 1.6rem;
   text-align: center; }
+  @media screen and (max-width: 800px) {
+    .two {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      .two:last-child {
+        margin-right: 0; } }
 
 main {
   margin-bottom: 3.2rem; }
@@ -496,12 +505,29 @@ input[type=email] {
   width: 400px;
   text-align: center;
   padding: 0 1.6rem; }
+  @media screen and (max-width: 800px) {
+    input[type=email] {
+      width: 100%;
+      display: block;
+      margin-bottom: 1.6rem; } }
 
 input[type=button] {
   display: inline-block; }
+  @media screen and (max-width: 800px) {
+    input[type=button] {
+      width: 100%;
+      display: block; } }
 
 .mc-field-group {
   display: inline-block; }
+  @media screen and (max-width: 800px) {
+    .mc-field-group {
+      width: 100%;
+      display: block; } }
 
 div.clear {
   display: inline-block; }
+
+._center {
+  display: block;
+  text-align: center; }
