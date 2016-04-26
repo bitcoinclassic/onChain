@@ -413,6 +413,24 @@ button, .button {
   button:hover, .button:hover {
     background: #b38600; }
 
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  background: #ffcc33;
+  color: #11111d;
+  padding: 0 1.6rem;
+  border: 0;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  outline: 0;
+  transition: 0.3s all ease; }
+  input[type=submit]:hover {
+    background: #b38600; }
+
 .old-streams {
   float: left;
   display: block;
