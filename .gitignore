@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 bower_components
 .DS_Store
+s3_website.yml
