@@ -240,16 +240,16 @@ a.url {
 
 .navigation__item {
   display: inline-block;
-  margin-left: $gutter;
+  margin-left: $gutter*2;
   text-align: center;
 
   @include media(max-width 1024px) {
-    @include span-columns(2);
+    @include span-columns(3);
     margin-left: 0;
   }
 
   @include media(max-width 800px) {
-    @include span-columns(2);
+    @include span-columns(3);
     margin-left: 0;
   }
 

@@ -228,14 +228,14 @@ a.url {
 
 .navigation__item {
   display: inline-block;
-  margin-left: 1.618em;
+  margin-left: 3.236em;
   text-align: center; }
   @media screen and (max-width: 1024px) {
     .navigation__item {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 14.70196%;
+      width: 23.23176%;
       margin-left: 0; }
       .navigation__item:last-child {
         margin-right: 0; } }
@@ -244,7 +244,7 @@ a.url {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 14.70196%;
+      width: 23.23176%;
       margin-left: 0; }
       .navigation__item:last-child {
         margin-right: 0; } }
