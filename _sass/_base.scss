@@ -399,6 +399,27 @@ button, .button {
   }
 }
 
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  height: $baseline * 2;
+  line-height: $baseline * 2;
+  text-align: center;
+  background: $orange;
+  color: $font-color;
+  padding: 0 $baseline;
+  border: 0;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  outline: 0;
+  transition: 0.3s all ease;
+
+  &:hover {
+    background: darken($orange, 25%);
+  }
+}
+
 .old-streams {
   @include span-columns(6);
 
