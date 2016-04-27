@@ -190,7 +190,7 @@ a.url {
   width: 100%;
   height: $baseline*8;
   z-index: 0;
-  @include linear-gradient($orange 30%, transparent 100%, $fallback: transparent);
+  @include linear-gradient($orange 30%, rgba(255,255,255,0.0001) 100%, $fallback: transparent);
 }
 
 
@@ -466,7 +466,7 @@ input[type=submit] {
         bottom: 0;
         position: absolute;
         width: 100%;
-        @include linear-gradient(transparent 0%, ghostwhite 80%);
+        @include linear-gradient(rgba(255,255,255,0.00001) 0%, ghostwhite 80%);
       }
     }
   }
