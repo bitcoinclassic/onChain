@@ -322,6 +322,7 @@ a.url {
   background: $font-color;
   @include pad($baseline);
   text-align: center;
+  margin-bottom: $baseline*2;
 
   @include media(max-width 800px) {
     @include span-columns(12);
@@ -504,25 +505,34 @@ input[type=email] {
   text-align: center;
   padding: 0 $baseline;
 
-  @include media(max-width 800px) {
+  @include media(max-width 900px) {
     width: 100%;
     display: block;
-    margin-bottom: $baseline;
+    margin-bottom: $baseline/2;
   }
 }
 
 input[type=button] {
   display: inline-block;
 
-  @include media(max-width 800px) {
+  @include media(max-width 900px) {
     width: 100%;
     display: block;
   }
 }
 
+form + span {
+  @include media(max-width 900px) {
+    text-align: center;
+    display: block;
+    margin-top: $baseline/2;
+  }
+}
+
 .mc-field-group {
   display: inline-block;
-  @include media(max-width 800px) {
+
+  @include media(max-width 900px) {
     width: 100%;
     display: block;
   }
