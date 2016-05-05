@@ -123,9 +123,9 @@ br {
 hr {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-  border: 0;
-  max-width: 1200px;
-  margin: $baseline auto;
+    border: 0;
+    max-width: 1200px;
+    margin: $baseline*2 auto;
 }
 
 p + h1, p + h2, p + h3 {
@@ -133,7 +133,7 @@ p + h1, p + h2, p + h3 {
 }
 
 article {
-  margin-bottom: $baseline;
+  margin-bottom: $baseline*2;
   @include clearfix();
 }
 
@@ -370,6 +370,10 @@ footer {
 .stream {
   background: $font-color;
   border-radius: 2px;
+  display: table;
+  width: 100%;
+  min-height: 480px;
+  padding: $baseline;
 }
 
 .stream__countdown {
@@ -478,6 +482,7 @@ input[type=submit] {
 
 .author {
   display: block;
+  text-align: center;
 }
 
 .speaker img {
@@ -545,4 +550,94 @@ div.clear {
 ._center {
   display: block;
   text-align: center;
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: inline-block;
+}
+
+h1 {
+    @include media(max-width 900px) {
+        text-align: center;
+    }
+}
+
+article.paper p.more {
+    text-align: justify;
+}
+
+article.paper h2 {
+    text-align: center;
+}
+
+table {
+    margin-top: $baseline;
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: $baseline*2;
+
+    th {
+        text-align: left;
+    }
+
+    @include media(min-width 900px max-width 1200px) {
+        display: block;
+        @include clearfix;
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            display: block;
+        }
+
+        tbody {
+            display: block;
+        }
+
+        tbody td {
+            display: inline-block;
+            @include span-columns(6);
+            @include omega(2n);
+        }
+
+        tbody td:before {
+            content: attr(data-th);
+            display: inline;
+        }
+    }
+
+    @include media(max-width 900px) {
+        display: block;
+        @include clearfix;
+        margin-bottom: $baseline;
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            display: block;
+        }
+
+        tbody {
+            display: block;
+        }
+
+        tbody td {
+            display: inline-block;
+            @include span-columns(12);
+            @include omega(1n);
+            text-align: center;
+        }
+
+        tbody td:before {
+            content: attr(data-th);
+            display: inline;
+        }
+    }
 }

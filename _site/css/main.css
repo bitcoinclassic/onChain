@@ -85,13 +85,13 @@ hr {
   background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
   border: 0;
   max-width: 1200px;
-  margin: 1.6rem auto; }
+  margin: 3.2rem auto; }
 
 p + h1, p + h2, p + h3 {
   margin-top: 1.6rem; }
 
 article {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 3.2rem; }
   article::after {
     clear: both;
     content: "";
@@ -389,7 +389,11 @@ footer {
 
 .stream {
   background: #11111d;
-  border-radius: 2px; }
+  border-radius: 2px;
+  display: table;
+  width: 100%;
+  min-height: 480px;
+  padding: 1.6rem; }
 
 .stream__countdown {
   line-height: 1em;
@@ -500,7 +504,8 @@ input[type=submit] {
     margin-bottom: 1.6rem; }
 
 .author {
-  display: block; }
+  display: block;
+  text-align: center; }
 
 .speaker img {
   border-radius: 160px;
@@ -556,3 +561,85 @@ div.clear {
 ._center {
   display: block;
   text-align: center; }
+
+.morecontent span {
+  display: none; }
+
+.morelink {
+  display: inline-block; }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    text-align: center; } }
+
+article.paper p.more {
+  text-align: justify; }
+
+article.paper h2 {
+  text-align: center; }
+
+table {
+  margin-top: 1.6rem;
+  table-layout: auto;
+  width: 100%;
+  margin-bottom: 3.2rem; }
+  table th {
+    text-align: left; }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    table {
+      display: block; }
+      table::after {
+        clear: both;
+        content: "";
+        display: table; }
+      table thead {
+        display: none; }
+      table tr {
+        display: block; }
+      table tbody {
+        display: block; }
+      table tbody td {
+        display: inline-block;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        table tbody td:last-child {
+          margin-right: 0; }
+        table tbody td:nth-child(2n) {
+          margin-right: 0; }
+        table tbody td:nth-child(2n+1) {
+          clear: left; }
+      table tbody td:before {
+        content: attr(data-th);
+        display: inline; } }
+  @media screen and (max-width: 900px) {
+    table {
+      display: block;
+      margin-bottom: 1.6rem; }
+      table::after {
+        clear: both;
+        content: "";
+        display: table; }
+      table thead {
+        display: none; }
+      table tr {
+        display: block; }
+      table tbody {
+        display: block; }
+      table tbody td {
+        display: inline-block;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center; }
+        table tbody td:last-child {
+          margin-right: 0; }
+        table tbody td:nth-child(1n) {
+          margin-right: 0; }
+        table tbody td:nth-child(1n+1) {
+          clear: left; }
+      table tbody td:before {
+        content: attr(data-th);
+        display: inline; } }
