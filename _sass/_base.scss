@@ -489,6 +489,8 @@ input[type=submit] {
   border-radius: 160px;
   float: left;
   margin-right: 24px;
+  height: 160px;
+  width: 160px;
 
   @include media(max-width 1024px) {
     width: 100px;
