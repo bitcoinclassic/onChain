@@ -102,8 +102,12 @@ h1 {
 }
 
 h2 {
-  margin-top: $baseline;
-  @include type-setting(2)
+  //margin-top: $baseline;
+  @include type-setting(2);
+
+  @include media(max-width 1024px) {
+    @include type-setting(1);
+  }
 }
 
 h3 {
@@ -119,13 +123,18 @@ br {
 hr {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-  border: 0;
-  max-width: 1200px;
-  margin: $baseline auto;
+    border: 0;
+    max-width: 1200px;
+    margin: $baseline*2 auto;
 }
 
 p + h1, p + h2, p + h3 {
   margin-top: $baseline;
+}
+
+article {
+  margin-bottom: $baseline*2;
+  @include clearfix();
 }
 
 p + p {
@@ -181,7 +190,7 @@ a.url {
   width: 100%;
   height: $baseline*8;
   z-index: 0;
-  @include linear-gradient($orange 30%, transparent 100%, $fallback: transparent);
+  @include linear-gradient($orange 30%, rgba(255,255,255,0.0001) 100%, $fallback: transparent);
 }
 
 
@@ -231,16 +240,16 @@ a.url {
 
 .navigation__item {
   display: inline-block;
-  margin-left: $gutter;
+  margin-left: $gutter*2;
   text-align: center;
 
   @include media(max-width 1024px) {
-    @include span-columns(2);
+    @include span-columns(3);
     margin-left: 0;
   }
 
   @include media(max-width 800px) {
-    @include span-columns(2);
+    @include span-columns(3);
     margin-left: 0;
   }
 
@@ -310,9 +319,15 @@ a.url {
 */
 
 .two {
-  background: #dedcde;
+  background: $font-color;
   @include pad($baseline);
   text-align: center;
+  margin-bottom: $baseline*2;
+
+  @include media(max-width 800px) {
+    @include span-columns(12);
+    @include shift(0);
+  }
 }
 
 main {
@@ -355,6 +370,10 @@ footer {
 .stream {
   background: $font-color;
   border-radius: 2px;
+  display: table;
+  width: 100%;
+  min-height: 480px;
+  padding: $baseline;
 }
 
 .stream__countdown {
@@ -367,6 +386,27 @@ footer {
 
 
 button, .button {
+  height: $baseline * 2;
+  line-height: $baseline * 2;
+  text-align: center;
+  background: $orange;
+  color: $font-color;
+  padding: 0 $baseline;
+  border: 0;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  outline: 0;
+  transition: 0.3s all ease;
+
+  &:hover {
+    background: darken($orange, 25%);
+  }
+}
+
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
   height: $baseline * 2;
   line-height: $baseline * 2;
   text-align: center;
@@ -430,7 +470,7 @@ button, .button {
         bottom: 0;
         position: absolute;
         width: 100%;
-        @include linear-gradient(transparent 0%, ghostwhite 80%);
+        @include linear-gradient(rgba(255,255,255,0.00001) 0%, ghostwhite 80%);
       }
     }
   }
@@ -438,4 +478,168 @@ button, .button {
   li {
     margin-bottom: $baseline;
   }
+}
+
+.author {
+  display: block;
+  text-align: center;
+}
+
+.speaker img {
+  border-radius: 160px;
+  float: left;
+  margin-right: 24px;
+  height: 160px;
+  width: 160px;
+
+  @include media(max-width 1024px) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+}
+
+input[type=email] {
+  height: $baseline * 2;
+  line-height: $baseline * 2;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  width: 400px;
+  text-align: center;
+  padding: 0 $baseline;
+
+  @include media(max-width 900px) {
+    width: 100%;
+    display: block;
+    margin-bottom: $baseline/2;
+  }
+}
+
+input[type=button] {
+  display: inline-block;
+
+  @include media(max-width 900px) {
+    width: 100%;
+    display: block;
+  }
+}
+
+form + span {
+  @include media(max-width 900px) {
+    text-align: center;
+    display: block;
+    margin-top: $baseline/2;
+  }
+}
+
+.mc-field-group {
+  display: inline-block;
+
+  @include media(max-width 900px) {
+    width: 100%;
+    display: block;
+  }
+}
+
+div.clear {
+  display: inline-block;
+}
+
+._center {
+  display: block;
+  text-align: center;
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: inline-block;
+}
+
+h1 {
+    @include media(max-width 900px) {
+        text-align: center;
+    }
+}
+
+article.paper p.more {
+    text-align: justify;
+}
+
+article.paper h2 {
+    text-align: center;
+}
+
+table {
+    margin-top: $baseline;
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: $baseline*2;
+
+    th {
+        text-align: left;
+    }
+
+    @include media(min-width 900px max-width 1200px) {
+        display: block;
+        @include clearfix;
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            display: block;
+        }
+
+        tbody {
+            display: block;
+        }
+
+        tbody td {
+            display: inline-block;
+            @include span-columns(6);
+            @include omega(2n);
+        }
+
+        tbody td:before {
+            content: attr(data-th);
+            display: inline;
+        }
+    }
+
+    @include media(max-width 900px) {
+        display: block;
+        @include clearfix;
+        margin-bottom: $baseline;
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            display: block;
+        }
+
+        tbody {
+            display: block;
+        }
+
+        tbody td {
+            display: inline-block;
+            @include span-columns(12);
+            @include omega(1n);
+            text-align: center;
+        }
+
+        tbody td:before {
+            content: attr(data-th);
+            display: inline;
+        }
+    }
 }
