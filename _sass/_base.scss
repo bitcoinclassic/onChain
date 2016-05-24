@@ -585,6 +585,10 @@ table {
         text-align: left;
     }
 
+    td > span {
+        font-size: 0.7rem;
+    }
+
     @include media(min-width 900px max-width 1200px) {
         display: block;
         @include clearfix;
