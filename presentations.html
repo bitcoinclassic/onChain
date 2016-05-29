@@ -34,10 +34,27 @@ layout: default
 
     <br>
     <article class="paper">
-        <h2>MINING PANEL: Marshall Long</h2>
-        <!-- <span class="author"><a href="/speakers.html#">Keynote Speaker Name</a></span>
+    <h2>Expedited Forwarding in Bitcoin Unlimited</h2>
+    <span class="author"><a href="/speakers.html#stone">Andrew Stone</a></span>
+    <p class="more">
+      To optimise the propagation of transactions and blocks, it makes sense to minimize the per-hop latency -- that is, minimize the time it takes to move data from one node to another.  Currently, the bitcoin network uses a three message sequential conversation to send a block or transaction.  This talk will report on efforts and discuss strategies to reduce this to a single message, and will also provide a general Bitcoin Unlimited status update.
+    </p>
+    </article>
+
+        <article class="paper">
+        <h2>Block space as a commodity</h2>
+        <span class="author"><a href="/speakers.html#rizun">Dr. Peter Rizun</a></span>
         <p class="more">
-        </p> -->
+            This talk will explore the question of whether block size is a useful tool for enforcing policy or an emergent phenomenon of the network. From the policy-tool perspective, the block size represents a “lever” that policy makers might use to balance the cost of operating a node with the market price for block space (i.e., transaction fees). Assuming only that block space obeys the laws of supply and demand, we will show that for any given market condition, there exists an artificial block size limit that will produce greater network security and slower blockchain growth than the equivalent no-limit case, at the expense of higher transaction fees and reduced economic activity. Despite the flexibility offered by the policy-tool approach, we will show that little empirical evidence exists that the network is capable of enforcing a strict block size limit, questioning whether the policy-tool perspective is valid. We conclude by suggesting a simple change to the Bitcoin software to empower each node operator to more easily express his free choice regarding the size of blocks he is willing to accept while simultaneously ensuring that his node tracks consensus.
+        </p>
+    </article>
+
+    <article class="paper">
+        <h2>MINING PANEL: Q&A</h2>
+        <span class="author"><a href="/speakers.html#">Moderator: TBA</a></span>
+        <p class="more">
+        Open panel discussion with some of the current prominant Bitcoin miners and industries.  Part of a healthy ecosystem is open dialog between all the industry participants and stakeholders.  This is an opportunity to have a dialog in a town hall format, so that we can foster healthy communication and understanding between all parties.
+        </p>
     </article>
 
     <hr>
@@ -68,57 +85,13 @@ layout: default
     </table>
     <br>
     <article class="paper">
-        <h2>Final Keynote: Jeff Garzik</h2>
+        <h2>Keynote: Jeff Garzik</h2>
         <!-- <span class="author"><a href="/speakers.html#">Keynote Speaker Name</a></span>
         <p class="more">
         </p> -->
     </article>
-    <article class="paper">
-        <h2>The Micro-Global Economy</h2>
-        <span class="author"><a href="/speakers.html#evans">Dr. Charles Evans</a></span>
-        <p class="more">
-          My presentation focuses on Bitcoin use cases in small-scale, cross-border trade. I am Executive Director of Conscious Entrepreneurship Foundation, which promotes the use of Bitcoin among the world's unbanked and underbanked. Currently, we work primarily with entrepreneurs in Sub-Saharan Africa, mostly in West Africa: Ghana, Nigeria, and Sierra Leone. For the 5.5 billion potential Bitcoin users, its use as a P2P medium of exchange is of greatest value.
-        </p>
-    </article>
 
-    <article class="paper">
-        <h2>xThin Blocks</h2>
-        <span class="author"><a href="/speakers.html#crypto">Chronos Crypto</a></span>
-        <p class="more">
-            In order to scale the Bitcoin network, a faster less bandwidth intensive method is needed in order to send larger blocks. The thinblock strategy is designed to speed up the relay of blocks by using the transactions that already exist in the requester's memory pool as a way to rebuild the block, rather than download it in its entirety. <br><br>Differing from other thinblock strategies, “Xtreme Thinblocks” uses simple bloom filtering and a new class of transactions to ensure that almost all block requests only require a single round trip, which is essential for good performance on a system where transaction rates are steadily climbing and only a single threaded network layer exists. In addition, Xtreme Thinblocks uses a 64 bit transaction hash which further reduces thinblock size; in doing so a typical 1MB block can be reduced to a 10KB to 25KB thinblock.
-        </p>
-    </article>
-
-    <hr>
-
-    <h1>Timeslot TBD</h1>
-
-    <article class="paper">
-        <h2>Block space as a commodity</h2>
-        <span class="author"><a href="/speakers.html#rizun">Dr. Peter Rizun</a></span>
-        <p class="more">
-            This talk will explore the question of whether block size is a useful tool for enforcing policy or an emergent phenomenon of the network. From the policy-tool perspective, the block size represents a “lever” that policy makers might use to balance the cost of operating a node with the market price for block space (i.e., transaction fees). Assuming only that block space obeys the laws of supply and demand, we will show that for any given market condition, there exists an artificial block size limit that will produce greater network security and slower blockchain growth than the equivalent no-limit case, at the expense of higher transaction fees and reduced economic activity. Despite the flexibility offered by the policy-tool approach, we will show that little empirical evidence exists that the network is capable of enforcing a strict block size limit, questioning whether the policy-tool perspective is valid. We conclude by suggesting a simple change to the Bitcoin software to empower each node operator to more easily express his free choice regarding the size of blocks he is willing to accept while simultaneously ensuring that his node tracks consensus.
-        </p>
-    </article>
-
-
-    <article class="paper">
-    <h2>Hard Forks and Schism forks why can't we have both?</h2>
-    <span class="author"><a href="/speakers.html#rosenfield">Meni Rosenfield</a></span>
-    <p class="more">
-      A lot of commotion and FUD has been drawn up about the scary nature of hard forks and how it could potentially result in Bitcoin splitting into 2 separate, non-fungible currencies.  But what if that could be made safe?  Would it then be such a bad thing?
-    </p>
-    </article>
-
-    <article class="paper">
-    <h2>BlockTorrent</h2>
-    <span class="author"><a href="/speakers.html#toomim">Jon Toomim</a></span>
-    <p class="more">
-      BlockTorrent is a way to speed up the IBD (Initial Block Download) of the blockchain by using BitTorrent like technology.  This reduces the download time and better spreads out network bandwidth loads.
-    </p>
-    </article>
-
-    <article class="paper">
+ <article class="paper">
     <h2>Pushing the envelope - How Scaling Leads to Scaling</h2>
     <span class="author"><a href="/speakers.html#garzik">Jeff Garzik</a></span>
     <p class="more">
@@ -127,12 +100,47 @@ layout: default
     </article>
 
     <article class="paper">
-    <h2>Expedited Forwarding in Bitcoin Unlimited</h2>
-    <span class="author"><a href="/speakers.html#stone">Andrew Stone</a></span>
+    <h2>Hard Forks and Schism forks why can't we have both?</h2>
+    <span class="author"><a href="/speakers.html#rosenfield">Meni Rosenfield</a></span>
     <p class="more">
-      To optimise the propagation of transactions and blocks, it makes sense to minimize the per-hop latency -- that is, minimize the time it takes to move data from one node to another.  Currently, the bitcoin network uses a three message sequential conversation to send a block or transaction.  This talk will report on efforts and discuss strategies to reduce this to a single message, and will also provide a general Bitcoin Unlimited status update.
+      A lot of commotion and misconceptions has been drawn up about the scary nature of hard forks and how it could potentially result in Bitcoin splitting into 2 separate, non-fungible currencies.  But what if that could be made safe?  Would it then be such a bad thing?
     </p>
     </article>
+
+        <article class="paper">
+        <h2>xThin Blocks</h2>
+        <span class="author"><a href="/speakers.html#crypto">Chronos Crypto</a></span>
+        <p class="more">
+            In order to scale the Bitcoin network, a faster less bandwidth intensive method is needed in order to send larger blocks. The thinblock strategy is designed to speed up the relay of blocks by using the transactions that already exist in the requester's memory pool as a way to rebuild the block, rather than download it in its entirety. <br><br>Differing from other thinblock strategies, “Xtreme Thinblocks” uses simple bloom filtering and a new class of transactions to ensure that almost all block requests only require a single round trip, which is essential for good performance on a system where transaction rates are steadily climbing and only a single threaded network layer exists. In addition, Xtreme Thinblocks uses a 64 bit transaction hash which further reduces thinblock size; in doing so a typical 1MB block can be reduced to a 10KB to 25KB thinblock.
+        </p>
+    </article>
+
+    <article class="paper">
+        <h2>The Micro-Global Economy</h2>
+        <span class="author"><a href="/speakers.html#evans">Dr. Charles Evans</a></span>
+        <p class="more">
+          My presentation focuses on Bitcoin use cases in small-scale, cross-border trade. I am Executive Director of Conscious Entrepreneurship Foundation, which promotes the use of Bitcoin among the world's unbanked and underbanked. Currently, we work primarily with entrepreneurs in Sub-Saharan Africa, mostly in West Africa: Ghana, Nigeria, and Sierra Leone. For the 5.5 billion potential Bitcoin users, its use as a P2P medium of exchange is of greatest value.
+        </p>
+    </article>
+
+
+
+
+    <hr>
+
+
+
+<!-- 
+    <article class="paper">
+    <h2>BlockTorrent</h2>
+    <span class="author"><a href="/speakers.html#toomim">Jon Toomim</a></span>
+    <p class="more">
+      BlockTorrent is a way to speed up the IBD (Initial Block Download) of the blockchain by using BitTorrent like technology.  This reduces the download time and better spreads out network bandwidth loads.
+    </p>
+    </article> -->
+
+   
+
 
 
 
