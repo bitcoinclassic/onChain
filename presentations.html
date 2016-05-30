@@ -51,9 +51,17 @@ layout: default
 
     <article class="paper">
         <h2>MINING PANEL: Q&A</h2>
-        <span class="author"><a href="/speakers.html#">Moderator: TBA</a></span>
+        <span class="author"><a href="/speakers.html#">Moderator: Marshall Long</a></span>
         <p class="more">
         Open panel discussion with some of the current prominant Bitcoin miners and industries.  Part of a healthy ecosystem is open dialog between all the industry participants and stakeholders.  This is an opportunity to have a dialog in a town hall format, so that we can foster healthy communication and understanding between all parties.
+        <br>
+        Participating will be 
+        Jihan Wu, Bitmain <br>
+        Kevin Pan, Bitmain <br>
+        Wang Chun, F2Pool, <br>
+        Alex Petrov, Bitfury, <br>
+        Robin Yao, BW <br>
+
         </p>
     </article>
 
@@ -108,10 +116,10 @@ layout: default
     </article>
 
         <article class="paper">
-        <h2>xThin Blocks</h2>
+        <h2>Xtreme Thinblocks</h2>
         <span class="author"><a href="/speakers.html#crypto">Chronos Crypto</a></span>
         <p class="more">
-            In order to scale the Bitcoin network, a faster less bandwidth intensive method is needed in order to send larger blocks. The thinblock strategy is designed to speed up the relay of blocks by using the transactions that already exist in the requester's memory pool as a way to rebuild the block, rather than download it in its entirety. <br><br>Differing from other thinblock strategies, “Xtreme Thinblocks” uses simple bloom filtering and a new class of transactions to ensure that almost all block requests only require a single round trip, which is essential for good performance on a system where transaction rates are steadily climbing and only a single threaded network layer exists. In addition, Xtreme Thinblocks uses a 64 bit transaction hash which further reduces thinblock size; in doing so a typical 1MB block can be reduced to a 10KB to 25KB thinblock.
+            The bandwidth and time required to propagate new blocks on the Bitcoin network presents a scaling challenge. Xtreme Thinblocks uses a unique Bloom filter to take advantage of the shared knowledge of pending transactions, reducing the resources needed to send new blocks between nodes. 
         </p>
     </article>
 
