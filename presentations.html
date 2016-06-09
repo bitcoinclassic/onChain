@@ -45,6 +45,27 @@ layout: default
     </p>
     </article>
 
+    <article class="paper">
+        <h2>Braiding the Blockchain</h2>
+        <span class="author"><a href="/speakers.html#mcelrath">Bob McElrath</a></span>
+        <p class="more">
+            The "chain" structure of Bitcoin only works if the network is
+            synchronous and new blocks are propagated with zero latency. Since the real
+            network is asynchronous, orphans (stale blocks) appear due to this
+            communications latency.  By allowing blocks to name multiple parents, we can tie
+            up asynchronously produced blocks into a specialization of a Directed Acyclic
+            Graph we call a "braid".  The orphan problem causes a race condition among
+            miners that reduces the security of the system [Eyal et. al.].  We present an
+            analysis of this braid structure on a Bitcoin-like network and present (1) how
+            to achieve the fastest possible block time in such an asynchronous network (2)
+            an analysis of the Bitcoin network under this additional assumption -- which
+            indicates an optimal equivalent block time of 11.6s.  Moving to a braid can
+            drastically increase the transaction rate accepted by the network while reducing
+            the block time, provide a mechanism to heal network splits, and dynamically
+            adjust to changing network conditions.
+        </p>
+    </article>
+
         <article class="paper">
         <h2>Block space as a commodity</h2>
         <span class="author"><a href="/speakers.html#rizun">Dr. Peter Rizun</a></span>
