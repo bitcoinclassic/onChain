@@ -77,9 +77,9 @@ for this script and many more
 ////////// CONFIGURE THE COUNTDOWN SCRIPT HERE //////////////////
 
 var month = '6';     //  '*' for next month, '0' for this month or 1 through 12 for the month
-var day = '25';       //  Offset for day of month day or + day
-var hour = 15;        //  0 through 23 for the hours of the day
-var tz = -7;         //  Offset for your timezone in hours from UTC
+var day = '24';       //  Offset for day of month day or + day
+var hour = 14;        //  0 through 23 for the hours of the day
+var tz = 0;         //  Offset for your timezone in hours from UTC
 var lab = 'tzcd';    //  The id of the page entry where the timezone countdown is to show
 
 function start() {displayTZCountDown(setTZCountDown(month,day,hour,tz),lab);}
@@ -115,7 +115,7 @@ return Math.floor(diffDate.valueOf()/1000);
 }
 function displayTZCountDown(countdown,tzcd)
 {
-if (countdown < 0) document.getElementById(tzcd).innerHTML = "Sorry, you are too late.";
+if (countdown < 0) document.getElementById(tzcd).innerHTML = "NOW!";
 else {var secs = countdown % 60;
 if (secs < 10) secs = '0'+secs;
 var countdown1 = (countdown - secs) / 60;
